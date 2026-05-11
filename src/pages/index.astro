@@ -37,6 +37,10 @@ import Layout from '../layouts/Layout.astro';
 
     <div class="divider">⁂</div>
 
+    <div class="article-image">
+      <img src="/image.png" alt="" />
+    </div>
+
     <section class="section" id="problem">
       <h2>1. Патриотизмот како епистемолошки проблем</h2>
       <p>Патриотизмот не е природна состојба ниту вродена особина — тој е конструкција, нешто што се учи, се преиспитува и се менува низ животот. Прашањето „што значи да си патриот?" не може да се одговори со просто наведување дефиниции; одговорот секогаш зависи од тоа како, кога и каде сме дошле до тоа знаење.</p>
@@ -732,5 +736,21 @@ import Layout from '../layouts/Layout.astro';
       font-size: 1.2rem;
       padding-left: 0.8rem;
     }
+  }
+
+  /* ========================================
+     Article Image
+     ======================================== */
+  .article-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+  }
+
+  .article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
   }
 </style>
